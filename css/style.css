@@ -1,474 +1,475 @@
-:root{
-    --primary-color: #e50914;
+:root {
+  --primary-color: #e50914;
 }
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-body{
-    font-family: 'Arial', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    background: #000;
-    color: #999;
-    overflow-x: hidden;
+body {
+  font-family: "Arial", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background: #000;
+  color: #999;
+  overflow-x: hidden;
 }
-ul{
-    list-style: none;
+ul {
+  list-style: none;
 }
-h1,h2,h3,h4{
-    color: #fff;
+h1,
+h2,
+h3,
+h4 {
+  color: #fff;
 }
-a{
-    color: #fff;
-    text-decoration: none;
+a {
+  color: #fff;
+  text-decoration: none;
 }
-p{
-    margin: 0.5rem 0;
-    /*rem is the relative font size to the fontsize of the html document if it is 16px then 0.5rem is 8px*/
+p {
+  margin: 0.5rem 0;
+  /*rem is the relative font size to the fontsize of the html document if it is 16px then 0.5rem is 8px*/
 }
-img{
-    width: 100%;
+img {
+  width: 100%;
 }
 /* overall showcase */
-.showcase{
-    width: 100vw;
-    height: 720px;
-    position: relative;
-    background: url(../NetflixBGImage.jpg) no-repeat center center/cover;
+.showcase {
+  width: 100vw;
+  height: 720px;
+  position: relative;
+  background: url(../NetflixBGImage.jpg) no-repeat center center/cover;
 }
-.showcase::after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background:rgba(0,0, 0, 0.6);
-    z-index: 1;
-    box-shadow: inset 0px 50px 50px rgba(0, 0, 0, 0.8);
+.showcase::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+  box-shadow: inset 0px 50px 50px rgba(0, 0, 0, 0.8);
 }
 /* navbar */
-.showcase-top{
-    position: relative;
-    height: 90px;
-    z-index: 2;
+.showcase-top {
+  position: relative;
+  height: 90px;
+  z-index: 2;
 }
 /* netflix logo */
-.showcase-top img{
-    width: 160px;
-    position: absolute;
-    top: 50%;
-    left: 0%;
-    margin-left:2.5rem;
-    transform: translate(0%,-50%);
+.showcase-top img {
+  width: 160px;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  margin-left: 2.5rem;
+  transform: translate(0%, -50%);
 }
 /* sign in button  */
-.showcase-top a{
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translate(-50%, -50%);
+.showcase-top a {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
 }
 /* central text  */
-.showcase-content{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 6.5rem auto 0 auto;
-    z-index: 2;
+.showcase-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 6.5rem auto 0 auto;
+  z-index: 2;
 }
 
-.showcase-content h1{
-    font-weight: 700;
-    font-size: 3.0rem;
-    line-height: 1.1;
-    width: 35rem;
-    margin-bottom: 0.4rem;
-    text-align: center;
+.showcase-content h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1.1;
+  width: 35rem;
+  margin-bottom: 0.4rem;
+  text-align: center;
 }
-.showcase-content h2{
-    font-weight: 450;
-    font-size: 1.6rem;
-    line-height: 1.1;
-    margin: 0.7rem 0 1.8rem 0;
-    text-align: center;
+.showcase-content h2 {
+  font-weight: 450;
+  font-size: 1.6rem;
+  line-height: 1.1;
+  margin: 0.7rem 0 1.8rem 0;
+  text-align: center;
 }
 
-.showcase-content p{
-    color: #fff;
-    font-weight: 450;
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    text-align: center;
+.showcase-content p {
+  color: #fff;
+  font-weight: 450;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
 /*Email Form*/
-.showcase-content #emailform{
-    box-sizing: border-box;
-    position: relative;
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    height: 60px;
-    box-sizing: border-box;
+.showcase-content #emailform {
+  box-sizing: border-box;
+  position: relative;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  box-sizing: border-box;
 }
-.showcase-content input{
-    outline: none;
-    border: none;
-    width: 65%;
-    padding: 0 0.4rem;
-    padding-top: 0.7rem;
-    font-size: 1.4rem;
-    
+.showcase-content input {
+  outline: none;
+  border: none;
+  width: 65%;
+  padding: 0 0.4rem;
+  padding-top: 0.7rem;
+  font-size: 1.4rem;
 }
 
-#plchldsmall{
-    font-size: 10px;
-    position: absolute;
-    color: #000;
-    top: 20%;
-    left:0;
-    padding: 0 10px 0 10px;
-    transform: translate(0,-50%);
-    transition: font-size 0.1s ease-out, top 0.1s ease-out;
+#plchldsmall {
+  font-size: 10px;
+  position: absolute;
+  color: #000;
+  top: 20%;
+  left: 0;
+  padding: 0 10px 0 10px;
+  transform: translate(0, -50%);
+  transition: font-size 0.1s ease-out, top 0.1s ease-out;
 }
-#placeholder{
-    display: inline-block;
-    color: #000;
-    position: absolute;
-    top: 50%;
-    left:0;
-    transform: translate(0,-50%);
-    font-weight: 100;
-    font-size: 1rem;
-    padding: 0 10px 0 10px;
-    transition: font-size 0.3s ease-out, top 0.3s ease-out;
+#placeholder {
+  display: inline-block;
+  color: #000;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  font-weight: 100;
+  font-size: 1rem;
+  padding: 0 10px 0 10px;
+  transition: font-size 0.3s ease-out, top 0.3s ease-out;
 }
 /* features */
-.featuresection{
-    background-color: rgb(44, 44, 44);
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.featuresection {
+  background-color: rgb(44, 44, 44);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.features{
-    background-color: rgb(0, 0, 0);
-    position: relative;
-    box-sizing: border-box;
-    height: 80%;
-    width: 100vw;
-    margin-top: 10px;
-    padding: 2rem 0;
-    display: flex;
-    flex-direction: row;
-    /* justify-content: center; */
-    align-items: center;
-    justify-content: space-around;
+.features {
+  background-color: rgb(0, 0, 0);
+  position: relative;
+  box-sizing: border-box;
+  height: 80%;
+  width: 100vw;
+  margin-top: 10px;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  align-items: center;
+  justify-content: space-around;
 }
-.features .info{
-    width: 43%;
+.features .info {
+  width: 43%;
 }
 
-.features .sidevideo{
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* height: 100%; */
-    width: 35rem;
+.features .sidevideo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 100%; */
+  width: 35rem;
 }
-.sidevideo video{
-    box-sizing: border-box;
-    position: absolute;
-    top: 48.2%;
-    left: 49.6%;
-    width: 72.3%;
-    transform: translate(-50%,-50%);
-    z-index: 0;
+.sidevideo video {
+  box-sizing: border-box;
+  position: absolute;
+  top: 48.2%;
+  left: 49.6%;
+  width: 72.3%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
 }
-.tv .sidevideo img{
-    z-index: 1;
+.tv .sidevideo img {
+  z-index: 1;
 }
-.features h2{
-    font-size: 3.2rem;
-    margin: 20px 0px;
+.features h2 {
+  font-size: 3.2rem;
+  margin: 20px 0px;
 }
-.features p{
-    width: 80%;
-    font-size: 1.5rem;
-    color: #fff;
+.features p {
+  width: 80%;
+  font-size: 1.5rem;
+  color: #fff;
 }
-.featuresection .features:nth-child(even) .sidevideo{
-    margin-left: 1rem;
+.featuresection .features:nth-child(even) .sidevideo {
+  margin-left: 1rem;
 }
-.featuresection .features:nth-child(even) .info{
-    margin-right: 5rem;
+.featuresection .features:nth-child(even) .info {
+  margin-right: 5rem;
 }
-.featuresection .features:nth-child(odd) .info{
-    margin-left: 5%;
+.featuresection .features:nth-child(odd) .info {
+  margin-left: 5%;
 }
-.featuresection .features:nth-child(odd) .sidevideo{
-    margin-right: 5rem;
+.featuresection .features:nth-child(odd) .sidevideo {
+  margin-right: 5rem;
 }
 
 /* offline animation */
-.offline .sidevideo{
-    position: relative;
+.offline .sidevideo {
+  position: relative;
 }
-#downloadanimation{
-    position: absolute;
-    background-color: #000;
-    border: 2px solid #404040;
-    display: flex;
-    align-items: center;
-    width: 68%;
-    bottom: 2rem;
-    height: 6.0rem;
-    border-radius: 15px;
+#downloadanimation {
+  position: absolute;
+  background-color: #000;
+  border: 2px solid #404040;
+  display: flex;
+  align-items: center;
+  width: 68%;
+  bottom: 2rem;
+  height: 6rem;
+  border-radius: 15px;
 }
-#downloadanimation .animationimage{
-    display: inline-block;
-    width: 55px;
-    margin: 0.6rem;
-    margin-right: 1.0rem;
+#downloadanimation .animationimage {
+  display: inline-block;
+  width: 55px;
+  margin: 0.6rem;
+  margin-right: 1rem;
 }
-#downloadanimation .animationdata{
-    display: inline-block;
+#downloadanimation .animationdata {
+  display: inline-block;
 }
-#downloadanimation .animation{
-    position: absolute;
-    display: inline-block;
-    width: 50px;
-    right: 0px;
+#downloadanimation .animation {
+  position: absolute;
+  display: inline-block;
+  width: 50px;
+  right: 0px;
 }
 /* offline animation */
 /* offlineanimation responsive */
-@media(max-width: 950px){
-    .featuresection{
-        width: 100vw;
-    }
-    .features{
-        flex-direction: column;
-    }
-    .features .info{
-        justify-content: center;
-        text-align: center;
-        width: 90%;
-    }
-    .features .info h2{
-        font-size: 2.4rem;
-    }
-    .features .info p{
-        font-size: 1.2rem;
-        width: 100%;
-    }
-    .featuresection .features:nth-child(even) .info{
-        order: 1;
-    }
-    .featuresection .features:nth-child(even) .sidevideo{
-        order: 2;
-    }
-    .featuresection .features:nth-child(even) .sidevideo{
-        margin: 0;
-    }
-    .featuresection .features:nth-child(even) .info{
-        margin: 0;
-    }
-    .featuresection .features:nth-child(odd) .info{
-        margin: 0;
-    }
-    .featuresection .features:nth-child(odd) .sidevideo{
-        margin: 0;
-    }
-    .features .sidevideo{
-        width: 40rem;
-    }
+@media (max-width: 950px) {
+  .featuresection {
+    width: 100vw;
+  }
+  .features {
+    flex-direction: column;
+  }
+  .features .info {
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+  }
+  .features .info h2 {
+    font-size: 2.4rem;
+  }
+  .features .info p {
+    font-size: 1.2rem;
+    width: 100%;
+  }
+  .featuresection .features:nth-child(even) .info {
+    order: 1;
+  }
+  .featuresection .features:nth-child(even) .sidevideo {
+    order: 2;
+  }
+  .featuresection .features:nth-child(even) .sidevideo {
+    margin: 0;
+  }
+  .featuresection .features:nth-child(even) .info {
+    margin: 0;
+  }
+  .featuresection .features:nth-child(odd) .info {
+    margin: 0;
+  }
+  .featuresection .features:nth-child(odd) .sidevideo {
+    margin: 0;
+  }
+  .features .sidevideo {
+    width: 40rem;
+  }
 }
-@media(max-width: 768px){
-    .features .sidevideo{
-        width: 90%;
-    }
-    #downloadanimation{
-        height: 20%;
-    }
-    #downloadanimation .animationimage{
-        width: 13%;
-    }
-    #downloadanimation .animation{
-        width: 50px;
-    }
+@media (max-width: 768px) {
+  .features .sidevideo {
+    width: 90%;
+  }
+  #downloadanimation {
+    height: 20%;
+  }
+  #downloadanimation .animationimage {
+    width: 13%;
+  }
+  #downloadanimation .animation {
+    width: 50px;
+  }
 }
-@media(max-width: 480px){
-    #downloadanimation{
-        margin: 0 10px;
-        height: 70px;
-        width: 310px;
-        bottom: 8%;
-    }
-    #downloadanimation .animationimage{
-        width: 12%;
-    }
-    #downloadanimation .animation{
-        width: 12%;
-        right: 10px;
-    }
+@media (max-width: 480px) {
+  #downloadanimation {
+    margin: 0 10px;
+    height: 70px;
+    width: 310px;
+    bottom: 8%;
+  }
+  #downloadanimation .animationimage {
+    width: 12%;
+  }
+  #downloadanimation .animation {
+    width: 12%;
+    right: 10px;
+  }
 }
-@media(max-width:280px){
-    #downloadanimation{
-        width: 260px;
-        bottom: 0%;
-    }
+@media (max-width: 280px) {
+  #downloadanimation {
+    width: 260px;
+    bottom: 0%;
+  }
 }
 /* features */
 /*utility classes*/
-.btn{
-    display: inline-block;
-    background-color: var(--primary-color);
-    color: #fff;
-    padding: 0.6rem 1.3rem;
+.btn {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 0.6rem 1.3rem;
+  font-size: 1rem;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  outline: none;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
+  border-radius: 2px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+.btn-rounded {
+  border-radius: 5px;
+}
+.btn-xl {
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding: 1rem 1.5rem;
+}
+@media (min-width: 768px) {
+  .showcase-content #emailform {
+    width: 720px;
+  }
+  .showcase-content #emailform button {
+    width: 15rem;
+  }
+  .showcase-content #emailform input {
+    width: 65%;
+  }
+}
+
+@media (max-width: 768px) {
+  .showcase {
+    position: relative;
+    height: 650px;
+  }
+  .showcase-content {
+    position: absolute;
+    top: 3%;
+    left: 5%;
+    right: 5%;
+  }
+  .showcase-top img {
+    width: 110px;
+    margin-left: 0.5rem;
+  }
+  .showcase-top a {
     font-size: 1rem;
-    text-align: center;
-    border: none;
-    cursor: pointer;
-    margin-right: 0.5rem;
-    outline: none;
-    box-shadow: 0 1px 2px rgba(0,0, 0, 0.45);
-    border-radius: 2px;
+    padding: 5px;
+    width: 70px;
+    right: -30px;
+  }
+  .showcase-content h1 {
+    font-size: 2.4rem;
+  }
+  .showcase-content h2 {
+    font-size: 1.4rem;
+  }
+  .showcase-content p {
+    font-size: 1.2rem;
+    margin: 0 2rem 2rem 2rem;
+  }
+  .showcase-content #emailform {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 10rem;
+  }
+  .showcase-content #emailform input {
+    width: 100%;
+    height: 20%;
+    margin: 0;
+    font-size: 0.7rem;
+    padding: 0 0.4rem;
+    padding-top: 0.4rem;
+  }
+  .showcase #emailform .btn {
+    display: block;
+    margin: 1.2rem 0 1.2rem 0;
+    padding: 0.8rem;
+    font-size: 1.3rem;
+  }
+  #placeholder {
+    font-size: 0.7rem;
+    padding: 0 6px 0 6px;
+    position: absolute;
+    top: 10%;
+  }
+  #plchldsmall {
+    font-size: 0.4rem;
+    position: absolute;
+    padding-top: 1px;
+    top: 3%;
+  }
+  @media (max-width: 560px) {
+    .showcase-content {
+      position: absolute;
+      top: 0%;
+      margin-top: 10rem;
+    }
+    .showcase-content h1 {
+      font-size: 1.9rem;
+      width: 20rem;
+    }
+    .showcase-content h2 {
+      font-size: 1.2rem;
+    }
+    .showcase-content p {
+      font-size: 1rem;
+    }
+  }
+  @media (max-width: 280px) {
+    .showcase-content {
+      position: absolute;
+      top: 2%;
+    }
+    .showcase-content h1 {
+      font-size: 1.5rem;
+      width: 14rem;
+    }
+    .showcase-content h2 {
+      padding: 0 2rem 0 2rem;
+    }
+    .showcase-content p {
+      font-size: 0.9rem;
+    }
+    .showcase-content #emailform input {
+      width: 100%;
+    }
+    .showcase-content #emailform .btn-xl {
+      margin: 4px;
+    }
+    .showcase-content #emailform button {
+      width: 100%;
+    }
+  }
 }
-
-.btn:hover{
-    opacity: 0.9;
-}
-.btn-rounded{
-    border-radius: 5px;
-}
-.btn-xl{
-    font-size: 1.6rem;
-    font-weight: 400;
-    padding: 1rem 1.5rem;
-}
-@media(min-width: 768px){
-    .showcase-content #emailform{
-        width: 720px;
-    }
-    .showcase-content #emailform button{
-        width: 15rem;
-    }
-    .showcase-content #emailform input{
-        width: 65%;
-    }
-}
-
-@media(max-width: 768px){
-    .showcase{
-        position: relative;
-        height: 650px;
-    }
-    .showcase-content{
-        position: absolute;
-        top: 3%;
-        left: 5%;
-        right: 5%;
-    }
-    .showcase-top img{
-        width: 110px;
-        margin-left:0.5rem;
-    }
-    .showcase-top a{
-        font-size: 1rem;
-        padding: 5px;
-        width: 70px;
-        right: -30px;
-    }
-    .showcase-content h1{
-        font-size: 2.4rem;
-    }
-    .showcase-content h2{
-        font-size: 1.4rem;
-        
-    }
-    .showcase-content p{
-        font-size: 1.2rem;
-        margin: 0 2rem 2rem 2rem;
-    }
-    .showcase-content #emailform{
-        width: 80%;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        height: 10rem;
-    }
-    .showcase-content #emailform input{
-        width: 100%;
-        height: 20%;
-        margin: 0;
-        font-size: 0.7rem;
-        padding: 0 0.4rem;
-        padding-top: 0.4rem;
-    }
-    .showcase #emailform .btn{
-        display: block;
-        margin: 1.2rem 0 1.2rem 0;
-        padding: 0.8rem;
-        font-size: 1.3rem;
-    }
-    #placeholder{
-        font-size: 0.7rem;
-        padding: 0 6px 0 6px;
-        position: absolute;
-        top: 10%;
-    }
-    #plchldsmall{
-        font-size: 0.4rem;
-        position: absolute;
-        padding-top: 1px;
-        top: 3%;
-    }
-@media(max-width:560px){
-    .showcase-content{
-        position: absolute;
-        top: 0%;
-        margin-top: 10rem;
-    }
-    .showcase-content h1{
-        font-size: 1.9rem;
-        width: 20rem;
-    }
-    .showcase-content h2{
-        font-size: 1.2rem;
-    }
-    .showcase-content p{
-        font-size: 1rem;
-    }
-}
-@media(max-width: 280px){
-    .showcase-content{
-        position: absolute;
-        top: 2%;
-    }
-    .showcase-content h1{
-        font-size: 1.5rem;
-        width: 14rem;
-    }
-    .showcase-content h2{
-        padding: 0 2rem 0 2rem;
-    }
-    .showcase-content p{
-        font-size: 0.9rem;
-    }
-    .showcase-content #emailform input{
-        width: 100%;
-
-    }
-    .showcase-content #emailform .btn-xl{
-        margin: 4px;
-    }
-    .showcase-content #emailform button{
-        width: 100%;
-    }
-}}
